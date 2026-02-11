@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Temperatura</title>
+
+  <!-- Correção do CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>🌡️ Conversor de Temperatura</h1>
+
+  <div class="toggle">
+    <button onclick="toggleDark()">Modo Escuro</button>
+  </div>
+
+  <input 
+    type="number" 
+    id="valor" 
+    placeholder="Digite a temperatura"
+    oninput="converter()"
+  >
+
+  <select id="origem" onchange="converter()">
+    <option value="c">Celsius (°C)</option>
+    <option value="f">Fahrenheit (°F)</option>
+    <option value="k">Kelvin (K)</option>
+  </select>
+
+  <select id="destino" onchange="converter()">
+    <option value="c">Celsius (°C)</option>
+    <option value="f">Fahrenheit (°F)</option>
+    <option value="k">Kelvin (K)</option>
+  </select>
+
+  <div class="resultado" id="resultado">
+    Digite um valor
+  </div>
+
+  <footer>
+    Feito por Janaina de Morais Santos - 2024
+  </footer>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
